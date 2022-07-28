@@ -20,6 +20,8 @@
 </head>
 
 <body>
+    <!-- headerr start here  -->
+
     <header>
         <!-- navbar start here  -->
         <section>
@@ -66,6 +68,7 @@
         <section>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner container  ">
+
                     <div class="carousel-item active  " style="background-image:url(images/cover/cover-1-01.png) ;">
                         <div class="carousel-caption    ">
                             <div class="container-slider">
@@ -80,6 +83,7 @@
 
 
                     </div>
+
                     <div class="carousel-item  " style="background-image:url(images/cover/cover-2-01.png) ;">
                         <div class="carousel-caption    ">
                             <div class="container-slider">
@@ -122,9 +126,10 @@
                 </div>
         </section>
         <!-- slider section end -->
-
     </header>
 
+
+    <!-- headerr end here  -->
 
 
 
@@ -305,7 +310,77 @@
                         readable content of a page when looking at its layout.</p>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <button type="button" class="btn btn-md bg-white fw-bold text-primary"> Register Now</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white text-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Register Now
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Registraton Form fillup</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <section class="container">
+                                        <div class="row my-3">
+                                            <div
+                                                class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                                                <h3>Please Register</h3>
+                                                <form>
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput"
+                                                            placeholder="name@example.com">
+                                                        <label for="floatingInput">Email address</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <input type="password" class="form-control"
+                                                            id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Password</label>
+                                                    </div>
+
+
+                                                    <select class="form-select mb-3"
+                                                        aria-label="Default select example">
+                                                        <option selected>Please select One</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Women</option>
+                                                        <option value="secret">Don't share</option>
+                                                    </select>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Accept our <a href=""> Terms and conditions </a>
+                                                        </label>
+                                                    </div>
+                                                    <button class="mt-3 btn btn-primary" type="submit">submit</button>
+                                                </form>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img class="img-fluid" src="images/signup.png" alt="">
+                                            </div>
+                                        </div>
+                                    </section>
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Save</button>
+                                    <button type="button" class="btn btn-primary">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -593,7 +668,7 @@
 
 
         <!-- Trusted company start here  -->
-        <section class="container py-5">
+        <section class="container py-5 d-lg-block d-none">
             <div class="text-center">
                 <h1 class="fw-bold">Trusted by over 800+ companies</h1>
             </div>
